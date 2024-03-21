@@ -1,0 +1,8 @@
+<section>
+    <h2>Todos</h2>
+    <ul>
+        <li *ngFor="let todo of todos$ | async">
+            {{todo}}
+        </li>
+    </ul>
+</section>
