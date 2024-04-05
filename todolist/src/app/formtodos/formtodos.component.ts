@@ -20,9 +20,7 @@ export class FormtodosComponent {
   }
 
   addTodo() {
-    if (this.newTodo) {
-      this.todoService.saveTodo(this.newTodo);
-    }
+    this.todoService.saveTodo(this.newTodo ?? '');
     this.newTodo = '';
   }
 }
