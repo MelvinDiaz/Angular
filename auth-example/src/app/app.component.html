@@ -1,0 +1,10 @@
+<section>
+  <h1>My app</h1>
+  <button (click)="this.componentToShow = 'login'">Login</button>
+  <app-login-form *ngIf="componentToShow == 'login'"></app-login-form>
+  <app-private-content *ngIf="componentToShow == 'private'">
+  </app-private-content>
+  <app-public-component
+    *ngIf="componentToShow == 'public'"
+  ></app-public-component>
+</section>
